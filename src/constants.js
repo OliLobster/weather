@@ -1,0 +1,1 @@
+export const api_key_weather_app='d6fcc1d1a14d9df2c73925d8f191d14f'

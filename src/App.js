@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
-import InputCity from "./Components/InputCity";
-import Header from "./Components/Header";
+import InputCity from "./components/InputCity";
+import Header from "./components/Header";
 import "./styles.css";
-import ShowWeather from "./Components/ShowWeather"
-
+import ShowWeather from "./components/ShowWeather"
+import {api_key_weather_app} from "./constants"
 export default function App() {
   const [weatherData, setWeatherData] = useState("");
   const [inputCity, setInputCity] = useState("Seattle");
@@ -22,8 +22,7 @@ export default function App() {
   };
 
   //  Weather API
-  const URL = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=b81a143c479a1155fa90ac077e36acd3`;
-
+  const URL = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${api_key_weather_app}`;
   //  Fetching weather data
   async function fetchData(URL) {
 
