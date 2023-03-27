@@ -14,7 +14,7 @@ const ShowWeather = ({ data }) => {
     // Values in standard units
 
     const pressureInAtm = (pressure / 1000).toFixed(2);
-    const tempInCelcius = (temperature / 10).toFixed(2);
+    const tempInCelcius = temperature; 
     const visibilityInKM = (visibility / 1000).toFixed(2);
 
     // Change border dynamically
