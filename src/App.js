@@ -22,7 +22,7 @@ export default function App() {
   };
 
   //  Weather API
-  const URL = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${api_key_weather_app}`;
+  const URL = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${api_key_weather_app}&units=metric`;
   //  Fetching weather data
   async function fetchData(URL) {
 
